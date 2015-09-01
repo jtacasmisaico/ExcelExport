@@ -1,0 +1,30 @@
+{
+    "version": "1.0.0-*",
+    "webroot": "wwwroot",
+    "exclude": [
+        "wwwroot"
+    ],
+    "packExclude": [
+        "**.kproj",
+        "**.user",
+        "**.vspscc"
+    ],
+    "dependencies": {
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta6",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta6",
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta6",
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta6",
+        "Microsoft.Framework.Logging.Console": "1.0.0-beta6",
+        "DocumentFormat.OpenXml":"2.5.0"
+    },
+    "commands": {
+        "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001"
+    },
+    "frameworks": {
+         "dnx451": {
+             "frameworkAssemblies": {
+                 "WindowsBase":"4.0.0"
+             }
+          }
+    }
+}
